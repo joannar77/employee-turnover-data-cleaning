@@ -29,7 +29,7 @@ A complete video presentation demonstrates the entire data cleaning workflow —
 
 <p align="center">
   <a href="https://vimeo.com/1128386953/734a795bc5">
-    <img src="assets/thumbnail.png" alt="Employee Turnover Data Cleaning Thumbnail" width="600">
+    <img src="assets/thumbnail.png" alt="Employee Turnover Data Cleaning Thumbnail" width="400">
   </a>
 </p>
 
@@ -59,7 +59,7 @@ All cleaning steps were implemented in a reproducible **Jupyter Notebook** and e
 ---
 
 ## Dataset Overview
-- **Source file:** `employee_turnover.csv`  
+- **Source file:** `employee_turnover_dataset.csv`  
 - **Rows:** 10,199  
 - **Columns:** 16  
 - **Primary Key:** `EmployeeNumber` (unique identifier)
@@ -146,11 +146,9 @@ employee-turnover-data-cleaning/
 │   └── employee_turnover_dataset.csv
 ├── assets/
 │   └── thumbnail.png
-├── docs/
-│   ├── Employee_Turnover_Data_Cleaning_Document.docx
+├── docs/ # Documentation (final report)
 │   └── employee_turnover.pdf
-├── requirements.txt
-└── .gitignore
+
 ```
 ---
 
