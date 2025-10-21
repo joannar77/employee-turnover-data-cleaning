@@ -143,7 +143,7 @@ employee-turnover-data-cleaning/
 ├── notebooks/
 │   └── employee_turnover.ipynb
 ├── data/
-│   └── employee_turnover.csv
+│   └── employee_turnover_dataset.csv
 ├── assets/
 │   └── thumbnail.png
 ├── docs/
