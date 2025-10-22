@@ -143,12 +143,12 @@ employee-turnover-data-cleaning/
 ├── notebooks/
 │   └── employee_turnover.ipynb
 ├── data/
-│   └── employee_turnover_dataset.csv
+│   ├── employee_turnover_dataset.csv
+│   └── employee_turnover_after_outlier_fix.csv
 ├── assets/
 │   └── thumbnail.png
 ├── docs/ # Documentation (final report)
 │   └── employee_turnover.pdf
-
 ```
 ---
 
