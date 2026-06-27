@@ -1,31 +1,72 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.1.4-green)
 ![NumPy](https://img.shields.io/badge/NumPy-1.26.4-orange)
-![Status](https://img.shields.io/badge/Status-Complete-success)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![Award](https://img.shields.io/badge/WGU-Excellence%20Award-gold)
 
-# Employee Turnover Data Cleaning  
-*A structured Python workflow for preparing raw HR data for attrition and workforce analytics.*
+# Employee Turnover Data Cleaning
 
----
-
-## Overview
-This project focuses on transforming a raw Human Resources dataset into a **clean, structured, and analysis-ready** format to support employee turnover analysis.  
-
-**Business question:**  
-> “Which teams are losing people — and why?”
-
-The workflow includes:
-- Systematic **data profiling**
-- Targeted **data cleaning**
-- **Validation checks** and business rule enforcement
-- **Flagging for transparency**, ensuring reproducibility and data integrity
+*A structured Python workflow for preparing raw HR data for employee turnover and workforce analytics.*
 
 ---
 
-## Video Walkthrough
-A complete video presentation demonstrates the entire data cleaning workflow — from inspection to validation.
+# Project Overview
 
-**[Watch the full project walkthrough on Vimeo](https://vimeo.com/1128386953/734a795bc5)**
+This project focuses on transforming a raw Human Resources dataset into a **clean, structured, and analysis-ready** format to support employee turnover analysis.
+
+**Business Question**
+
+> **Which teams are losing people—and why?**
+
+The workflow demonstrates a systematic approach to:
+
+- Data profiling
+- Data cleaning
+- Validation and business rule enforcement
+- Transparent flagging for reproducibility and data integrity
+
+The resulting dataset is suitable for exploratory analysis, workforce reporting, predictive modeling, and employee attrition analytics.
+
+---
+
+# Skills Demonstrated
+
+- Data Cleaning
+- Data Profiling
+- Data Validation
+- Feature Engineering
+- Missing Data Imputation
+- Outlier Detection
+- Data Quality Assurance
+- Business Rule Validation
+- Python
+- Pandas
+- NumPy
+
+---
+
+# Technologies
+
+- Python 3.10.14
+- Pandas 2.1.4
+- NumPy 1.26.4
+- Jupyter Notebook
+
+---
+
+# 🎥 Project Presentation
+
+A complete presentation of the project is available on Vimeo. The presentation explains the business problem, data preparation methodology, validation process, quality assurance techniques, and the importance of clean data for employee turnover analytics.
+
+▶️ **Watch the Project Presentation**
+
+https://vimeo.com/1205140794
+
+---
+
+# 🎥 Technical Implementation Walkthrough
+
+A detailed implementation walkthrough demonstrates the complete data cleaning workflow—from initial profiling through validation and final quality checks.
 
 <p align="center">
   <a href="https://vimeo.com/1128386953/734a795bc5">
@@ -33,109 +74,104 @@ A complete video presentation demonstrates the entire data cleaning workflow —
   </a>
 </p>
 
----
+**Watch the Technical Walkthrough**
 
-## What’s Covered in the Video
-- **Data Profiling:** Reviewing dataset shape, variable types, and observable values  
-- **Data Cleaning:**
-  - Handling duplicates
-  - Imputing missing values with flags
-  - Formatting and standardizing categorical fields
-  - Validating derived salary calculations
-  - Detecting and flagging outliers
-- **Final Checks:** Ensuring no missing values remain, duplicates are removed, and variables follow business rules.  
-- **Tools:** Python 3.10.14, Pandas 2.1.4, NumPy 1.26.4  
-- **Outcome:** A fully cleaned dataset ready for exploratory analysis or modeling.
+https://vimeo.com/1128386953/734a795bc5
 
 ---
 
-## Technical Environment
-- **Programming Language:** Python 3.10.14  
-- **Libraries:** Pandas 2.1.4, NumPy 1.26.4  
-- **Operating System:** Linux  
+# Dataset Overview
 
-All cleaning steps were implemented in a reproducible **Jupyter Notebook** and exported as both `.py` and `.pdf` for version control and portability.
+- **Source file:** `employee_turnover_dataset.csv`
+- **Rows:** 10,199
+- **Columns:** 16
+- **Primary Key:** `EmployeeNumber`
 
----
-
-## Dataset Overview
-- **Source file:** `employee_turnover_dataset.csv`  
-- **Rows:** 10,199  
-- **Columns:** 16  
-- **Primary Key:** `EmployeeNumber` (unique identifier)
-
-| Variable                          | Data Type     | Subtype                      | Notes                                   |
-|------------------------------------|---------------|-------------------------------|------------------------------------------|
-| EmployeeNumber                     | Categorical   | Identifier                   | Primary Key                             |
-| Age                                | Numeric       | Continuous                   | Years                                   |
-| Tenure                             | Numeric       | Discrete                     | Years of service                        |
-| Turnover                           | Categorical   | Binary (Yes/No)              | Target variable                         |
-| HourlyRate                         | Numeric       | Continuous (currency)        | Converted from string                   |
-| HoursWeekly                        | Numeric       | Discrete                     | Hours worked                            |
-| CompensationType                   | Categorical   | Nominal                      | Hourly vs Salary                        |
-| AnnualSalary                       | Numeric       | Continuous (derived)         | Validated with business rules          |
-| DrivingCommuterDistance            | Numeric       | Continuous                   | Outliers handled and flagged           |
-| JobRoleArea                        | Categorical   | Nominal                      | Department/role                         |
-| Gender                             | Categorical   | Nominal                      | M/F/Prefer Not to Answer               |
-| MaritalStatus                      | Categorical   | Nominal                      | Single/Married/Divorced                |
-| NumCompaniesPreviouslyWorked       | Numeric       | Discrete (nullable)          | Imputed median, flagged                |
-| AnnualProfessionalDevHrs          | Numeric       | Continuous (nullable)        | Imputed zero/median, flagged           |
-| PaycheckMethod                     | Categorical   | Nominal                      | Standardized labels                    |
-| TextMessageOptIn                   | Categorical   | Binary (Yes/No/Unknown)      | Flagged missing values                 |
+| Variable | Data Type | Subtype | Notes |
+|-----------|-----------|----------|------|
+| EmployeeNumber | Categorical | Identifier | Primary Key |
+| Age | Numeric | Continuous | Years |
+| Tenure | Numeric | Discrete | Years of service |
+| Turnover | Categorical | Binary | Target variable |
+| HourlyRate | Numeric | Continuous | Converted from string |
+| HoursWeekly | Numeric | Discrete | Hours worked |
+| CompensationType | Categorical | Nominal | Hourly vs Salary |
+| AnnualSalary | Numeric | Continuous | Derived and validated |
+| DrivingCommuterDistance | Numeric | Continuous | Outliers handled and flagged |
+| JobRoleArea | Categorical | Nominal | Department/role |
+| Gender | Categorical | Nominal | M/F/Prefer Not to Answer |
+| MaritalStatus | Categorical | Nominal | Single/Married/Divorced |
+| NumCompaniesPreviouslyWorked | Numeric | Discrete | Median imputed |
+| AnnualProfessionalDevHrs | Numeric | Continuous | Missing values imputed |
+| PaycheckMethod | Categorical | Nominal | Standardized labels |
+| TextMessageOptIn | Categorical | Binary | Missing values flagged |
 
 ---
 
-## Data Profiling Steps
-1. **Shape Check:** `df.shape` → 10,199 rows × 16 columns  
-2. **Variable Inventory:** `df.info()` + data dictionary mapping  
-3. **Sample Inspection:** `df.head()` and `df.sample(5)` to spot early issues  
-4. **Category Audits:** Unique value checks to detect inconsistent labeling and formatting
+# Data Profiling
+
+The workflow began with a comprehensive assessment of dataset quality.
+
+Steps included:
+
+1. Dataset shape verification
+2. Variable inventory
+3. Sample inspection
+4. Category audits
+5. Missing value analysis
+6. Duplicate detection
 
 ---
 
-## Data Cleaning Process
+# Data Cleaning Process
 
-### 1. Duplicates
-- **Finding:** 99 exact duplicates detected (`df.duplicated().sum()`).  
-- **Action:** Removed duplicates, retaining the first occurrence.  
-- **Result:** 10,100 records remain. Primary key uniqueness confirmed.
+## Duplicate Records
 
-### 2. Missing Values
-- `TextMessageOptIn` — normalized Yes/No, flagged missing values.  
-- `AnnualProfessionalDevHrs` — imputed 0.0 with missingness flag; median optional.  
-- `NumCompaniesPreviouslyWorked` — imputed median (4), flagged missing.
+- Detected 99 duplicate records.
+- Removed duplicates while preserving the first occurrence.
+- Confirmed primary key uniqueness.
 
-### 3. Formatting and Consistency
-- Removed underscores and trimmed whitespace.  
-- Standardized categorical labels (e.g., `Mail_Check` → `Mailed Check`).  
-- Converted `HourlyRate` from string with `$` to numeric.  
-- Stripped whitespace from column names.
+## Missing Values
 
-### 4. Derived Field Validation
-- Recomputed `AnnualSalary` as HourlyRate × HoursWeekly × 52
-- Flagged and corrected 2,122 mismatched values with $1 tolerance.
+- Imputed missing values using business rules.
+- Added transparency flags for imputed records.
+- Eliminated missing values while preserving auditability.
 
-### 5. Outliers
-- Negative commuter distances replaced with NaN and imputed with the median (49 miles).  
-- Distances above the 99th percentile flagged (not removed).  
-- Preserved outlier signals for future modeling.
+## Formatting and Consistency
 
----
+- Standardized categorical labels.
+- Removed unnecessary whitespace.
+- Converted currency fields to numeric values.
+- Normalized inconsistent values.
 
-## Final Quality Checks
+## Derived Field Validation
 
-| Metric                        | Before      | After        |
-|-------------------------------|-------------|--------------|
-| Rows                          | 10,199      | 10,100       |
-| Duplicates                    | 99          | 0            |
-| Total Missing Values          | 4,868       | 0 (flagged)  |
-| Annual Salary Mismatches      | 2,122       | 0            |
-| Inconsistent Paycheck Labels  | 7 variants  | 2 standardized |
+- Recalculated Annual Salary.
+- Corrected 2,122 inconsistent salary values using business rules.
+
+## Outlier Handling
+
+- Corrected invalid commuter distances.
+- Flagged extreme values instead of removing them.
+- Preserved potentially valuable analytical information.
 
 ---
 
-## File Structure
-```
+# Final Quality Checks
+
+| Metric | Before | After |
+|---------|-------:|------:|
+| Rows | 10,199 | 10,100 |
+| Duplicate Records | 99 | 0 |
+| Missing Values | 4,868 | 0 (flagged) |
+| Salary Mismatches | 2,122 | 0 |
+| Paycheck Labels | 7 | 2 standardized |
+
+---
+
+# Repository Structure
+
+```text
 employee-turnover-data-cleaning/
 ├── README.md
 ├── scripts/
@@ -147,21 +183,40 @@ employee-turnover-data-cleaning/
 │   └── employee_turnover_after_outlier_fix.csv
 ├── assets/
 │   └── thumbnail.png
-├── docs/ # Documentation (final report)
+├── docs/
 │   └── employee_turnover.pdf
+└── awards/
+    └── WGU_Excellence_Award_Data_Preparation_and_Exploration.pdf
 ```
+
 ---
 
-## Key Takeaways
-- A **structured cleaning workflow** transforms raw HR data into analysis-ready information.  
-- Transparent **flagging** allows future analysts to trace every modification.  
-- Clean data ensures that turnover analysis — a critical HR metric — is **accurate, reproducible, and decision-useful**.
+# Key Takeaways
+
+This project demonstrates that a structured data cleaning workflow can:
+
+- Transform raw HR data into analysis-ready information.
+- Improve data quality through validation and business rule enforcement.
+- Preserve transparency using data quality flags.
+- Produce reliable datasets suitable for workforce analytics and predictive modeling.
+
+---
+
+# Business Value
+
+Clean, trustworthy data enables organizations to:
+
+- Improve employee turnover analysis
+- Support predictive workforce analytics
+- Increase confidence in business reporting
+- Reduce downstream data quality issues
+- Build reliable machine learning models
 
 ---
 
 # 🏆 Recognition
 
-This project received a **WGU Excellence Award** for exemplary work in **Data Preparation and Exploration** (Task 1).
+This project received a **WGU Excellence Award** for exemplary work in **Data Preparation and Exploration (Task 1).**
 
 The award certificate is included in the `awards/` directory.
 
