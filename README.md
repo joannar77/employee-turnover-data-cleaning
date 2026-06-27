@@ -159,8 +159,19 @@ employee-turnover-data-cleaning/
 
 ---
 
-## References
-- MacDonald, J. (2025). *Data Deduplication Best Practices.*  
-- Koneshloo, A. (2025). *Practical Outlier Handling for Business Data.*  
-- Cabral, M. (2025). *Missing Data Strategies in Workforce Analytics.*  
-- Internal data dictionary and supporting documentation.
+# 🏆 Recognition
+
+This project received a **WGU Excellence Award** for exemplary work in **Data Preparation and Exploration** (Task 1).
+
+The award certificate is included in the `awards/` directory.
+
+---
+
+# Author
+
+**Joanna Ronchi**
+
+- Master of Science in Data Science
+- Bachelor of Science in Information Technology Management
+
+GitHub: https://github.com/joannar77
